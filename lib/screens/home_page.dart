@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/screens/add_note_bottom.dart';
-import 'package:note_app/screens/note_body.dart';
+import 'package:note_app/widget/add_note_bottom.dart';
+import 'package:note_app/widget/note_body.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

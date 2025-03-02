@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:note_app/screens/custem_appBar.dart';
-import 'package:note_app/screens/note_list_view.dart';
+import 'package:note_app/widget/custem_appBar.dart';
+import 'package:note_app/widget/note_list_view.dart';
 
 class NoteBodyView extends StatelessWidget {
   const NoteBodyView({super.key});
@@ -13,16 +13,17 @@ class NoteBodyView extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
         child: Column(
           children: [
-            CustemAppBar(),
-            SizedBox(
+            CustemAppBar(
+              text: 'NOTE',
+              icon: Icons.search,
+            ),
+            const SizedBox(
               height: 10,
             ),
-            Expanded(child: NoteListView()),
+            const Expanded(child: NoteListView()),
           ],
         ),
       ),
     );
   }
 }
-
-

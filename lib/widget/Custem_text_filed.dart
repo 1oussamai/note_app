@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/screens/constants.dart';
+import 'package:note_app/widget/constants.dart';
 
 class CustemTextFiled extends StatelessWidget {
   const CustemTextFiled({super.key, required this.hintText,  this.maxLine=1});
