@@ -42,7 +42,7 @@ class EditNoteBody extends StatelessWidget {
             height: 18,
           ),
           const CustemBotton(
-            color: KPrimeryColor,
+            color: kPrimeryColor,
             text: "save",
           ),
           const SizedBox(

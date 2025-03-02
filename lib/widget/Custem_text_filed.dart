@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:note_app/widget/constants.dart';
 
 class CustemTextFiled extends StatelessWidget {
-  const CustemTextFiled({super.key, required this.hintText,  this.maxLine=1});
+  const CustemTextFiled({super.key, required this.hintText, this.maxLine = 1});
 
   final String hintText;
   final int maxLine;
@@ -15,7 +15,7 @@ class CustemTextFiled extends StatelessWidget {
         hintText: hintText,
         enabledBorder: OutlineBuilder(),
         border: OutlineBuilder(),
-        focusedBorder: OutlineBuilder(KPrimeryColor),
+        focusedBorder: OutlineBuilder(kPrimeryColor),
       ),
     );
   }

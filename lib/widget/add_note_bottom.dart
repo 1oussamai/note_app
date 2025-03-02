@@ -32,7 +32,7 @@ class AddNoteBottomSheet extends StatelessWidget {
             ),
             CustemBotton(
               text: 'save',
-              color: KPrimeryColor,
+              color: kPrimeryColor,
             ),
           ],
         ),

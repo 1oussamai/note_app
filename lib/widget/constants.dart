@@ -1,3 +1,4 @@
 import 'package:flutter/material.dart';
 
- const KPrimeryColor = Colors.amberAccent;
+const kPrimeryColor = Colors.amberAccent;
+const kNoteBox = 'kNoteBox';
