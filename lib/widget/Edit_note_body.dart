@@ -12,17 +12,17 @@ class EditNoteBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
       child: Column(
         children: [
           const CustemAppBar(
             text: 'EDIT NOTE',
-            icon: Icons.abc,
+            icon: Icons.done,
           ),
           const SizedBox(
             height: 19,
           ),
-          CustemTextFiled(hintText: 'edit the title'),
+          const CustemTextFiled(hintText: 'edit the title'),
           const SizedBox(
             height: 10,
           ),
@@ -30,20 +30,22 @@ class EditNoteBody extends StatelessWidget {
             hintText: 'edit the descreption',
             maxLine: 5,
           ),
-          Spacer(),
+          const Spacer(),
           CustemBotton(
             onTap: () {
               Navigator.pop(context);
             },
-            color: Colors.red[300],
+            color: Colors.grey[300],
             text: "cancel",
           ),
-           CustemBotton(
-
+          const SizedBox(
+            height: 18,
+          ),
+          const CustemBotton(
             color: KPrimeryColor,
             text: "save",
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
         ],
