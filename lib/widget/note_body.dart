@@ -17,10 +17,10 @@ class NoteBodyView extends StatelessWidget {
               text: 'NOTE',
               icon: Icons.search,
             ),
-            const SizedBox(
+             SizedBox(
               height: 10,
             ),
-            const Expanded(child: NoteListView()),
+             Expanded(child: NoteListView()),
           ],
         ),
       ),
