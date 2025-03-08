@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/widget/constants.dart';
 
 class CustemBotton extends StatelessWidget {
-  const CustemBotton({super.key, required this.text, this.onTap, this.color});
+  const CustemBotton({super.key, required this.text, this.onTap, this.color,  this.isLoading= false});
   final String text;
   final void Function()? onTap;
   final Color? color;
+  final bool isLoading;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -16,7 +16,9 @@ class CustemBotton extends StatelessWidget {
         decoration:
             BoxDecoration(color: color, borderRadius: BorderRadius.circular(8)),
         child: Center(
-          child: Text(
+          child: isLoading ? const CircularProgressIndicator(
+            color: Colors.black,
+          ): Text(
             text,
             style: const TextStyle(
               fontSize: 19,
