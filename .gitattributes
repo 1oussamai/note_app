@@ -5,5 +5,10 @@
 *.m linguist-detectable=false
 *.mm linguist-detectable=false
 *.c linguist-detectable=false
+CMakeLists.txt linguist-detectable=false
 /ios/* linguist-vendored
 /android/* linguist-vendored
+/windows/* linguist-vendored
+/linux/* linguist-vendored
+/macos/* linguist-vendored
+
