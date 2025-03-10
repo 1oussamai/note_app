@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/models/note_model.dart';
 import 'package:note_app/widget/Edit_note_body.dart';
 
-import 'package:note_app/widget/custem_appBar.dart';
+
 
 class EditNoteScreen extends StatelessWidget {
-  const EditNoteScreen({super.key});
-
+  const EditNoteScreen({super.key, required this.note});
+  final NoteModel note;
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return  SafeArea(
       child: Scaffold(
-        body: EditNoteBody(),
+        body: EditNoteBody(
+          note: note,
+        ),
       ),
     );
   }
 }
-
-
